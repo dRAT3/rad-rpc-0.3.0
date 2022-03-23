@@ -7,6 +7,7 @@ use std::sync::Arc;
 mod config;
 mod core;
 mod formatter;
+mod identify_last;
 
 lazy_static! {
     static ref CONFIG: Arc<RwLock<config::Config>> = Arc::new(RwLock::new(config::Config::new()));
